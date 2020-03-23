@@ -1,21 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package u04e02;
 
-/**
- *
- * @author hernan
- */
+import java.util.Scanner;
 public class U04E02 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public static void main(String[] args) {
+    Scanner entrada=new Scanner(System.in);
+    System.out.print("Ingrese el primer numero: ");
+    int num1= entrada.nextInt();
+    System.out.print("Ingrese el segundo numero: ");
+    int num2= entrada.nextInt();
+    int cociente = num1/num2; //guarda el resultado del cociente de la division
+    int resto = num1%num2; //guarda el resultado del resto de la division
+    System.out.println("El resultado del cociente es " +cociente);
+    System.out.println("El resto de la division es: " +resto);
     }
-    
 }
